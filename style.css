@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(11, 248, 177);
+  opacity: 0.8;
+}
+
+nav ul {
+background-color: rgb(12, 206, 148);
+padding: 20px 40px;
+border-radius: 5px;
+}
+
+nav ul li {
+    background: rgb(155, 37, 115);
+    padding: 10px 20px;
+    margin: 4px 0;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+nav ul li:hover {
+    background-color: rgb(194, 53, 135);
+}
+
+
+nav ul li a {
+    color: rgb(252, 252, 252);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.indexpage {
+    position: absolute;
+    padding: 10px 20px;
+    bottom: 200px;
+    border-radius:5px;
+    background-color: aquamarine;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.indexpage:hover {
+    background-color: rgb(74, 187, 187);
+}
+
+.indexpage a {
+    color: black;
+}
+
+/* end index file */
+
+
+
+/* 
+================================
+A sample transition.
+Click on the large ball on the left to see the animation.
+*/
+.anim:active .ball-one {
+    left: 150px;
+    transition: left .5s ease-in;
+  }
+  
+  /* 
+  ================================
+  Your code here! 
+  Make the small ball on the right roll to the right when the large one hits it.
+  
+  */
+  .anim:active .ball-two {
+    left: 500px;
+    transition: left .5s .4s ease-in;
+  }
+  
+  
+  /* 
+  ================================
+  Necessary CSS Below-- no need to edit */
+  
+  .ball-one {
+    background: #ff97C0;
+    border-radius: 50%;
+    position: absolute; top: 0px; left: 00px;
+    width: 200px; height: 200px;
+  }
+  
+  .ball-two {
+    background: #0097C0;
+    border-radius: 50%;
+    position: absolute; top: 100px; left: 300px;
+    width: 100px; height: 100px;
+  }
+
+
+
+
+.exercise2 div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 1s ease-in-out;
+
+}
+
+.exercise2  div:hover {
+    width: 300px;
+}
+
+
+/*---------------------------------- exercise 3 ----------------------*/
+/*---------------------------------- exercise 3 ----------------------*/
+
+.exercise3 div.one {
+  
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: 1s
+}
+
+.exercise3 div.two {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: 1s 1s;
+}
+
+.exercise3 div#main:hover .one  {
+    width: 300px;
+}
+
+.exercise3 div#main:hover .two  {
+    width: 300px;
+}
+
+
+
+/*---------------------------------- exercise 4 ----------------------*/
+/*---------------------------------- exercise 4 ----------------------*/
+
+.exercise4 {
+    width: 100%;
+    height: 100%;
+}
+
+.exercise4 div#main {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.exercise4 div#main .content {
+    position: absolute;
+    text-align:center;
+    width:200px;
+    top:50%;
+    transform:translate(0 -50%);
+    font-size:24pt;
+}
+
+.exercise4 div#main .topleft {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    background: red;
+    transition: 1s;
+    
+}
+
+.exercise4 div#main .topright {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 100px;
+    background: yellow;
+    transition: 1s;
+}
+
+.exercise4 div#main .bottomleft {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    top: 100px;
+    background: blue;
+    transition: 1s;
+
+}
+
+.exercise4 div#main .bottomright {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 100px;
+    background: green;
+    transition: 1s;
+
+}
+
+.exercise4 div#main:hover .topleft {
+    left:-100px;
+    transform: rotate(-90deg);
+}
+
+.exercise4 div#main:hover .topright {
+    left:200px;
+    transform: rotate(90deg);
+}
+
+.exercise4 div#main:hover .bottomleft {
+    left:-100px;
+    transform: rotate(-90deg);
+}
+
+.exercise4 div#main:hover .bottomright {
+    left:200px;
+    transform: rotate(90deg);
+}
+
+
+/*---------------------------------- exercise 5 ----------------------*/
+/*---------------------------------- exercise 5 ----------------------*/
+
+.exercise5 .box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top:0px;
+  }
+
+  .exercise5 .box:active {
+    animation:boxAnimation 10s;
+  }
+
+@keyframes boxAnimation {
+    20% {
+        left: 300px;
+        top:0;
+    }
+    40% {
+        left: 300px;
+        top: 300px;
+
+    }
+    60% {
+        left: 0;
+        top:300px;
+    }
+
+}
+    
+
+
+/*---------------------------------- exercise 6 ----------------------*/
+/*---------------------------------- exercise 6 ----------------------*/
+/*---------------------------------- exercise 6 ----------------------*/
+
+.exercise6 {
+  width: 100%;
+  height: 100%;
+}
+
+.exercise6 div#loader {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.exercise6 div#loader .red {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+  opacity: 0.75;
+  transform-origin: 50% 50%;
+  animation: rotating 5s infinite;
+}
+
+
+.exercise6 div#loader .green {
+  display: inline-block;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 12.5px;
+  left: 12.5px;
+  background: green;
+  opacity: 0.75;
+  transform-origin: 50% 50%;
+  animation: rotating 3s infinite;
+}
+
+
+.exercise6 div#loader .blue {
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 25px;
+  left: 25px;
+  background: blue;
+  transform-origin: 50% 50%;
+  animation: rotating 2s infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*---------------------------------- exercise 7 ----------------------*/
+/*---------------------------------- exercise 7 ----------------------*/
+
+.exercise7 {
+  width: 100%;
+  height: 100%;
+}
+
+.exercise7 div#loader {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.exercise7 div#loader .red {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+  opacity: 0.75;
+  transform-origin: 50% 50%;
+  animation: rotating 4s infinite;
+}
+
+
+.exercise7 div#loader .green {
+  display: inline-block;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 12.5px;
+  left: 12.5px;
+  background: green;
+  opacity: 0.75;
+  transform-origin: 50% 50%;
+  animation: rotating 3s infinite;
+}
+
+.exercise7 div#loader .blue {
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 25px;
+  left: 25px;
+  background: blue;
+  transform-origin: 50% 50%;
+  animation: rotating 2s infinite;
+}
+
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*---------------------------------- exercise 8 ----------------------*/
+/*---------------------------------- exercise 8 ----------------------*/
+
+.exercise8 {
+    width: 100%;
+    height: 100%;
+    margin:0px;
+    padding: 0px;
+    overflow:hidden;
+    position:relative;
+    background-color:white;
+  }
+  
+  .exercise8  .deck {
+    position:relative;
+    
+    left:50%;
+    width:250px;
+    height: 300px;
+    transform:translateX(-50%);
+    border:none;
+    transition: 2s;;
+  }
+  
+  .exercise8 .card {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:inherit;
+    height: inherit;
+    transition: 2s;;
+    transform-origin: left bottom;
+    border: none;
+    outline: none;
+  }
+  
+  .exercise8  .card img {
+    width:inherit;
+    height:inherit;
+    border: none;
+    transition: 2s;;
+    
+  }
+  
+  .exercise8  .card:hover {
+    outline: 3px solid red;
+    
+  }
+  
+  .exercise8  .deck:hover .card:nth-child(1) {
+    transform:rotate(-20deg);
+  
+  }
+  
+  .exercise8  .deck:hover .card:nth-child(1):hover {
+    transform:scale(1.2,1.2) rotate(-20deg);
+  }
+  
+  .exercise8  .deck:hover .card:nth-child(2) {
+    transform:rotate(-10deg);
+  }
+  
+.exercise8  .deck:hover .card:nth-child(2):hover {
+    transform:scale(1.2,1.2) rotate(-10deg);
+  }
+  
+.exercise8  .deck:hover .card:nth-child(3) {
+    transform:rotate(0deg);
+  }
+.exercise8  .deck:hover .card:nth-child(3):hover {
+    transform:scale(1.2,1.2) rotate(0deg);
+  }
+  
+.exercise8  .deck:hover .card:nth-child(4) {
+    transform:rotate(10deg);
+  }
+.exercise8  .deck:hover .card:nth-child(4):hover {
+    transform:scale(1.2,1.2) rotate(10deg);
+  }
+  
+.exercise8  .deck:hover .card:nth-child(5) {
+    transform:rotate(20deg);
+  }
+.exercise8  .deck:hover .card:nth-child(5):hover {
+    transform:scale(1.2,1.2) rotate(20deg);
+  }
